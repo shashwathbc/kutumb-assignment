@@ -3,6 +3,7 @@ import { getQuotes } from "../../api/quotes";
 import FloatingButton from "../floatingButton";
 import QuoteCard from "../quoteCardPage";
 import { useNavigate } from "react-router-dom";
+import "./style.css";
 
 const QuoteListPage = () => {
   const [quotes, setQuotes] = useState([]);
@@ -21,7 +22,7 @@ const QuoteListPage = () => {
       setOffset(prevOffset => prevOffset + 20);
     }
   };
-  
+
 
   useEffect(() => {
     loadQuotes();
@@ -29,8 +30,20 @@ const QuoteListPage = () => {
 
   return (
     <div>
+      <div className="header-content">
+        <div className="title">Shashwath BC - Kutumb</div>
+        <img
+          className="profile-img"
+          src="https://media.instahyre.com/images/profile/base/employer/27493/0d3bbf7532/93274002_223539352323826_7514704080795598848_.webp"
+          alt="Profile"
+        />
+        <button className="logout-btn" onClick={() => navigate("/")}>
+          Logout
+        </button>
+      </div>
+
       {/* {quotes.map((quote) => ( */}
-        <QuoteCard quotes={quotes} />
+      <QuoteCard quotes={quotes} />
       {/* ))} */}
       {hasMore && <button onClick={loadQuotes}>Load More</button>}
       <FloatingButton onClick={() => navigate("/create")} />
