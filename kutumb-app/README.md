@@ -20,14 +20,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 1) Login Page : User can add his unique username and the password to login is : 1234
-2) Quote Listing Page : 
+2) Quote Creation Page : where user can add image , text and then upload
+3) Quote Listing Page : 
     -where all the quotes which is added are mapped and listed 
     -It has a + floating button using which the user will be redirected to quote creation 
      page
     -At bottom it has a load more button using which the user can scroll through the rest 
      of the content
     - Also has a Header section with logout option
-3)Quote Creation Page : where user can add image , text and then upload
 
 ## TO GET STARTED WITH THIS PROJECT:
 
