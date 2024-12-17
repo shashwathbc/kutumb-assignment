@@ -3,7 +3,7 @@
 
 
 # Getting Started with Create React App
-![image](https://github.com/user-attachments/assets/680a7c74-ef3d-4085-87b2-c801a8995c01)
+![image](https://github.com/user-attachments/assets/c3ec2af1-5f6d-48a1-8f58-f0df5eb9505d)
 ![image](https://github.com/user-attachments/assets/7b48f934-65ab-4e3d-9a53-27e321782e93)
 ![image](https://github.com/user-attachments/assets/787818a8-772e-477a-aac4-9a813569b20d)
 
