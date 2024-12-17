@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import login  from "../../api/auth";
+import "./style.css";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -18,12 +19,22 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <input placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
-      <input placeholder="OTP" onChange={(e) => setOtp(e.target.value)} />
-      <button onClick={handleSubmit}>Login</button>
-    </div>
+    <div className="login-container">
+  <div className="login-form">
+    <h1>Login</h1>
+    <input 
+      placeholder="Username" 
+      onChange={(e) => setUsername(e.target.value)} 
+    />
+    <input 
+      placeholder="OTP" 
+      type="password" 
+      onChange={(e) => setOtp(e.target.value)} 
+    />
+    <button onClick={handleSubmit}>Login</button>
+  </div>
+</div>
+
   );
 };
 

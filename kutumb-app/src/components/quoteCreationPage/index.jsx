@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { uploadImage } from "../../api/upload";
 import { createQuote } from "../../api/quotes";
 import { useNavigate } from "react-router-dom";
+import "./style.css";
 
 const QuoteCreationPage = () => {
   const [text, setText] = useState("");
@@ -12,6 +13,7 @@ const QuoteCreationPage = () => {
   const handleSubmit = async () => {
     try {
       const mediaUrl = await uploadImage(file);
+      console.log('mediaUrl',mediaUrl)
       await createQuote(token, text, mediaUrl);
       alert("Quote created!");
       navigate("/quotes");
@@ -21,12 +23,21 @@ const QuoteCreationPage = () => {
   };
 
   return (
-    <div>
-      <h1>Create Quote</h1>
-      <input placeholder="Enter quote" onChange={(e) => setText(e.target.value)} />
-      <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-      <button onClick={handleSubmit}>Submit</button>
-    </div>
+    <div className="create-quote-container">
+  <div className="create-quote-form">
+    <h1>Create Quote</h1>
+    <input 
+      placeholder="Enter quote" 
+      onChange={(e) => setText(e.target.value)} 
+    />
+    <input 
+      type="file" 
+      onChange={(e) => setFile(e.target.files[0])} 
+    />
+    <button onClick={handleSubmit}>Submit</button>
+  </div>
+</div>
+
   );
 };
 

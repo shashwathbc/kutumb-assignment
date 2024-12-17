@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const createQuote = async (token, text, mediaUrl) => {
+  console.log(token, text, mediaUrl)
     const response = await axios.post(
       "https://assignment.stage.crafto.app/postQuote",
       { text, mediaUrl },

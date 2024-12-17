@@ -8,7 +8,7 @@ export const uploadImage = async (file) => {
       "https://crafto.app/crafto/v1.0/media/assignment/upload",
       formData
     );
-  
-    return response.data.mediaUrl; // Returns media URL
+    console.log('ddd', response)
+    return response?.data?.[0]?.url; // Returns media URL
   };
   

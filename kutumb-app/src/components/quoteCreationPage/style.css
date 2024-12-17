@@ -1,0 +1,89 @@
+/* Create Quote Page container */
+.create-quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9fafb;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form container for the quote creation */
+  .create-quote-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Title styling */
+  .create-quote-form h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  .create-quote-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Input focus effect */
+  .create-quote-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* File input styling */
+  .create-quote-form input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-top: 15px;
+  }
+  
+  /* Button styling */
+  .create-quote-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  /* Button hover effect */
+  .create-quote-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .create-quote-form {
+      padding: 20px;
+    }
+  
+    .create-quote-form h1 {
+      font-size: 1.5rem;
+    }
+  
+    .create-quote-form input, .create-quote-form button {
+      font-size: 0.9rem;
+    }
+  }
+  

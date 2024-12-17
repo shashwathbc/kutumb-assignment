@@ -29,9 +29,9 @@ const QuoteListPage = () => {
 
   return (
     <div>
-      {quotes.map((quote) => (
-        <QuoteCard key={quote.id} quote={quote} />
-      ))}
+      {/* {quotes.map((quote) => ( */}
+        <QuoteCard quotes={quotes} />
+      {/* ))} */}
       {hasMore && <button onClick={loadQuotes}>Load More</button>}
       <FloatingButton onClick={() => navigate("/create")} />
     </div>

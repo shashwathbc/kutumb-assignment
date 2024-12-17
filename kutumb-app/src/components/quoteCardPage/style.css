@@ -1,5 +1,61 @@
-.quote-card-container{
+/* Container for grid layout */
+.quote-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-}
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Card styling */
+  .quote-card-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .quote-card-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image container */
+  .quote-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Fallback background for empty images */
+  }
+  
+  .quote-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures full image is visible */
+  }
+  
+  /* Quote text styling */
+  .quote-text {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    word-wrap: break-word;
+  }
+  
+  /* Footer styling */
+  .quote-footer {
+    padding: 8px 12px;
+    background-color: #f9f9f9;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+  }
+  
